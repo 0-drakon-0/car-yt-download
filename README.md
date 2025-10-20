@@ -14,28 +14,28 @@ This project was build to help creating an usb stick with songs from youtube for
  * ffmpeg -> for fixing any .mp3's corruption
 
 #### Arch & derivatives:
- `sudo pacman -S yt-dlp ffmpeg`
+ ```sudo pacman -S yt-dlp ffmpeg```
 
 #### Debian, Ubuntu, Mint & derivatives:
- `sudo apt update && sudo apt install yt-dlp ffmpeg`
+ ```sudo apt update && sudo apt install yt-dlp ffmpeg```
 
 #### Fedora, CentOS Stream, Rocky Linux, AlmaLinux:
- `sudo dnf install yt-dlp ffmpeg`
+ ```sudo dnf install yt-dlp ffmpeg```
 
 #### OpenSUSE:
- `sudo zypper install yt-dlp ffmpeg`
+ ```sudo zypper install yt-dlp ffmpeg```
 
 ### Usage
 
 #### Step 1)
 clone this repo:
 
-`git clone https://github.com/0-drakon-0/car-yt-download.git`
+```git clone https://github.com/0-drakon-0/car-yt-download.git```
 
 #### Step 2)
 Run lsblk to know which disk you will format
 
-`lsblk`
+```lsblk```
 
 You will be greeted by something like this:
 
