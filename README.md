@@ -2,7 +2,7 @@
 
 This project was build to help creating an usb stick with songs from youtube for older cars whose stereo do not recognize newer partitioning fromats or might have problems with special characters.
 
-** This projects was made for LINUX not windows**
+**This project was made for LINUX not windows**
 
 ### Safety Checks
 * Only works on block devices smaller than 16GB.
@@ -10,38 +10,38 @@ This project was build to help creating an usb stick with songs from youtube for
 
 
 ### Dependencies
- yt-dlp -> for downloading yt playlists
- ffmpeg -> for fixing any .mp3's corruption
+ * yt-dlp -> for downloading yt playlists
+ * ffmpeg -> for fixing any .mp3's corruption
 
 #### Arch & derivatives:
- 'sudo pacman -S yt-dlp ffmpeg'
+ `sudo pacman -S yt-dlp ffmpeg`
 
 #### Debian, Ubuntu, Mint & derivatives:
- 'sudo apt update && sudo apt install yt-dlp ffmpeg'
+ `sudo apt update && sudo apt install yt-dlp ffmpeg`
 
 #### Fedora, CentOS Stream, Rocky Linux, AlmaLinux:
- 'sudo dnf install yt-dlp ffmpeg'
+ `sudo dnf install yt-dlp ffmpeg`
 
 #### OpenSUSE:
- 'sudo zypper install yt-dlp ffmpeg'
+ `sudo zypper install yt-dlp ffmpeg`
 
 ### Usage
 
 #### Step 1)
 clone this repo:
 
-'git clone https://github.com/0-drakon-0/car-yt-download.git'
+`git clone https://github.com/0-drakon-0/car-yt-download.git`
 
 #### Step 2)
 Run lsblk to know which disk you will format
 
-'lsblk'
+`lsblk`
 
 You will be greeted by something like this:
 
-'NAME       MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS'
-'sda        259:0    0 15.2G  0 disk'
-'├─sda1     259:1    0 15.2G  0 part'
+`NAME       MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS
+sda        259:0    0 15.2G  0 disk
+├─sda1     259:1    0 15.2G  0 part`
 
 Choose the disk you think it's the usb you are searching for. Usually it's something small. (don't worry about erasing your system, the program has safety checks put in place for that)
 
@@ -51,10 +51,10 @@ run the script like so: (note that it works only on playlists not single videos)
 sudo $0 /dev/sdX <youtube_PLAYLIST_link>'
 
 Example:
-'sudo $0 /dev/sdb https://youtube.com/someurl'
-'sudo $0 /dev/sda https://youtube.com/someurl'
+`sudo $0 /dev/sdb https://youtube.com/someurl`
+`sudo $0 /dev/sda https://youtube.com/someurl`
 
-** !!! /dev/sda not /dev/sda1 !!! **
+**!!! /dev/sda not /dev/sda1 !!!**
 
 yes, it does require *sudo*, it needs the privilages to format the disk
 
