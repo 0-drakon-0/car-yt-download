@@ -39,9 +39,11 @@ Run lsblk to know which disk you will format
 
 You will be greeted by something like this:
 
-`NAME       MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS
+```
+NAME       MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS
 sda        259:0    0 15.2G  0 disk
-├─sda1     259:1    0 15.2G  0 part`
+├─sda1     259:1    0 15.2G  0 part
+```
 
 Choose the disk you think it's the usb you are searching for. Usually it's something small. (don't worry about erasing your system, the program has safety checks put in place for that)
 
@@ -51,8 +53,10 @@ run the script like so: (note that it works only on playlists not single videos)
 sudo $0 /dev/sdX <youtube_PLAYLIST_link>'
 
 Example:
-`sudo $0 /dev/sdb https://youtube.com/someurl`
-`sudo $0 /dev/sda https://youtube.com/someurl`
+```
+sudo $0 /dev/sdb https://youtube.com/someurl
+sudo $0 /dev/sda https://youtube.com/someurl
+```
 
 **!!! /dev/sda not /dev/sda1 !!!**
 
