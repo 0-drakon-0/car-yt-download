@@ -2,7 +2,7 @@
 
 This project was build to help creating an usb stick with songs from youtube for older cars whose stereo do not recognize newer partitioning fromats or might have problems with special characters.
 
-**This project was made for LINUX not windows**
+**This project was made to be run on LINUX using bash**
 
 ### Safety Checks
 * Only works on block devices smaller than 16GB.
